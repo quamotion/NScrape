@@ -8,7 +8,7 @@ namespace NScrape
     /// </summary>
     public class JsonWebResponse : TextWebResponse
     {
-        internal JsonWebResponse(bool success, Uri url, string text, Encoding encoding)
+        public JsonWebResponse(bool success, Uri url, string text, Encoding encoding)
             : base(url, WebResponseType.JavaScript, success, text, encoding)
         {
         }
